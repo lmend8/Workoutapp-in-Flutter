@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+  }
+
+  .welcome-bg{
+    background-image: url("images/welcome.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .workout-bg{
+    background-image: url("images/workout.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: white;
+    background-attachment: fixed;
+  }
+
+  .workout h1{
+    font-size: "18";
+    text-align: center;
+  }
+
+  .tracker-bg{
+    background-image: url("images/tracker.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+    opacity: 0.8;
+  }
+
+  nav {
+    order: 1;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+  }
+  
+  .nav__links li {
+    padding: 0px 30px;
+  }
+  
+  .nav__links li:nth-child(1) {
+    padding: 0 20px 0 0;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    order: 2;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  .profile{
+    width: 490px;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 10px;
+    border-style: groove;
+    border: 0px solid black; 
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.85;
+  }
+
+  .pi{
+    margin-top: 20px;
+    font-size: 28px;
+  }
+
+  .h2c{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+
+  .h1c{
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .pt{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .workout{
+    width: 1600px;
+    height: 800px;
+    margin: 0px auto;
+    margin-top: 30px;
+    border-style: groove;
+    border: 0px solid black; 
+    border-radius: 10px;
+    /* background-color: rgba(1, 1, 1, 0); */
+  }
+
+  .h1wc{
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .day{
+    position: absolute;
+    margin-left: var(--marginLeft);
+    margin-top: var(--marginTop);
+    width: 300px;
+    height: 300px;
+    border-style: groove;
+    border: 0px solid black; 
+    border-radius: 10px;
+    background-color: #fffdd0;
+  }
+  .daybtn{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    cursor: pointer;
+    color: #7c7a7a;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .daybtn:hover {
+    opacity: 0.4;
+  }
+  /*
+  .workout button{
+    position: absolute;
+    font-size: 15px;
+    background: black;
+    width: 150px;
+    color: white;
+    border: 0px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    margin-left: 1400px;
+    margin-top: -72px;
+  }
+  */
+
+
+  .editworktextbox{
+    margin-left: 24px; 
+    max-width:250px; 
+    max-height:250px; 
+    min-width:250px; 
+    min-height:250px;
+    resize: none;
+  }
+
+  .exercise_div {
+    margin: auto;
+    width: 50%;
+    background-color: honeydew;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: black;
+  }
+
+  .exercise_list{
+    padding: 10px;
+    background-color: #fffdd0;
+    min-height: auto;
+    list-style-type: none;
+    width: 600px;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: black;
+    position: absolute;
+  }
+
+  .exercise_list li{
+    border: 3px solid grey;
+    padding: 10px;
+    min-height: 100px;
+    overflow: auto;
+  }
+
+  .exercise_list li img {
+    float: left;
+    margin: 0 5px 0 0;
+    max-width: 150px;
+    max-height: 90px;
+  }
+
+  .tutorial{
+    float: left;
+    margin: 0 5px 0 0;
+    max-width: 150px;
+    max-height: 90px;
+  }
+
+  .complete_btn {
+    float: bottom;
+    color: green;
+    width: 100px;
+    height: 35px;
+  }
+
+  .ipt_label {
+    float: right;
+    font-size: 18;
+  }
+
+  .intensity_ipt {
+    float: bottom;
+    margin: 0 0 0 0;
+    width: 50px;
+    height: 50px;
+    font-size: 18;
+    text-align: center;
+    text-align: bottom;
+  }
+
+  .unmutable_intensity {
+    font-size: 18;
+    float: right;
+  }
+
+  .exercise_list p {
+    font-size: 16;
+  }
+
+  .exercise_list h3 {
+    font-size: 17;
+  }
+

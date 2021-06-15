@@ -1,0 +1,36 @@
+<html class="index-bg">
+    <head>
+        <title> Login </title>
+        <!-- <link
+        href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+        rel="stylesheet"
+        /> -->
+        <link rel="stylesheet" href="./styles/newstyle.css" type="text/css"/>
+    </head>
+    <body>
+        <div id = "login_div" class = "login-div"> 
+            <h1>Login</h1>
+            <!-- <p>Email</p> -->
+            <input type = "email" placeholder = "Email" id = "email" required/>
+            <!-- <p>Password</p> -->
+            <input type = "password" placeholder = "Password" id = "password"required/><br>
+            <button onclick="signIn()" id="signIn">Login</button>
+            <p>Don't have an account? <a href="signup.html">Sign up Now</a></p>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+        <script src = "./scripts/signIn.js"> </script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyCVGsDdbKJYehZNz83LMRWSGWXEXopJJqU",
+                authDomain: "workout-ada54.firebaseapp.com",
+                databaseURL: "https://workout-ada54.firebaseio.com",
+                projectId: "workout-ada54",
+                storageBucket: "workout-ada54.appspot.com",
+                messagingSenderId: "323648675143",
+                appId: "1:323648675143:web:34762df453e1d6dc0a0062",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+    </body>
+</html>

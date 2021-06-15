@@ -1,0 +1,57 @@
+<html class = "workout-bg">
+    <head>
+        <title>Workout</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/styles.css"/>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="welcome.html"><p style = "color:white">Profile</p></a></li>
+                    <li><a href="workout.html"><p style = "color:white">Workout</p></a></li>
+                    <li><a href="tracker.html"><p style = "color: white">Tracker</p></a></li>
+                    <li><a href="settings.html"><p style = "color: white">Settings</p></a></li>
+                    <li><a onclick ="logout()"><p style = "color:white">Log Out</p></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1 id = "day_header" style = "margin: auto; width: 50%; color: white; outline-color: black;"></h1>
+
+        <div class = "exercise_div">
+            <ul class = "exercise_list" id = "list">
+            </ul>
+        </div>
+
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+        <script src = "./scripts/util.js"></script>
+        <script src = "./scripts/exerciseplanner.js"></script>
+        <script src = "./scripts/exercise.js"> </script>
+        <script src = "./scripts/goalscheduler.js"></script>
+        <script src = "./scripts/scheduler.js"></script>
+        <script src = "./scripts/workoutdetail.js"></script>
+        <script src = "./scripts/workout.js"> </script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyCVGsDdbKJYehZNz83LMRWSGWXEXopJJqU",
+                authDomain: "workout-ada54.firebaseapp.com",
+                databaseURL: "https://workout-ada54.firebaseio.com",
+                projectId: "workout-ada54",
+                storageBucket: "workout-ada54.appspot.com",
+                messagingSenderId: "323648675143",
+                appId: "1:323648675143:web:34762df453e1d6dc0a0062",
+            };
+            firebase.initializeApp(firebaseConfig);
+            loadWorkout(getDay());
+        </script>
+        <!-- <p id = "cardio_param">Right Click on Page,</p>
+        <p id = "bodyweight_param">Inspect</p>
+        <p id = "strength_param">Go to Console, click Calculate Workout, wait 3 seconds</p> -->
+    </body>
+</html>

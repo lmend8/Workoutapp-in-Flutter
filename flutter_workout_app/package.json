@@ -1,0 +1,24 @@
+{
+  "name": "workout-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^8.0.2",
+    "firebase-admin": "^9.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poker-Stars/Workout-Application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poker-Stars/Workout-Application/issues"
+  },
+  "homepage": "https://github.com/Poker-Stars/Workout-Application#readme"
+}

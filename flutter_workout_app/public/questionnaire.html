@@ -1,0 +1,75 @@
+<html class = "questionnaire-bg">
+  <head>
+    <title>Firebase Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/newstyle.css" />
+    </head>
+    <body>
+        <div id="questionnaire_div" class="questionnaire-div">
+            <h3 class = "q">This questionnaire is to help us determine your particular workout. </h3>
+            <p class= "body"></p>
+            <div>
+            <label for = "heightlabel">Height</label> 
+            <input type = "number" placeholder = "(ft)" id = "height-feet" min = "0" max = "9" style="width: 50px;" required/>
+            <input type = "number" placeholder = "(in)" id = "height-inches" min = "0" max = "11" style="width: 50px;"required/>
+            <label for = "weightlabel">Weight</label>
+            <input type = "number" placeholder = "(lbs)" id = "weight" style = "width: 60px" required/>
+            </div>
+            <p class= "bold">Which best describes my goals?</p>
+            <input type = "radio" name = "goal" value = "3">Burn fat to lose weight<br>
+            <input type = "radio" name = "goal" value = "2">Tone (lose fat while gaining muscle)<br>
+            <input type = "radio" name = "goal" value = "1">Gain muscle mass<br>
+            <p class= "bold">Which days am I available to workout? (Leave at least one day for a rest day)</p>
+            <input type = "checkbox" name = "day" value = "0">Sunday<br>
+            <input type = "checkbox" name = "day" value = "1">Monday<br>
+            <input type = "checkbox" name = "day" value = "2">Tuesday<br>
+            <input type = "checkbox" name = "day" value = "3">Wednesday<br>
+            <input type = "checkbox" name = "day" value = "4">Thursday<br>
+            <input type = "checkbox" name = "day" value = "5">Friday<br>
+            <input type = "checkbox" name = "day" value = "6">Saturday<br>
+            <p class= "bold">How long would I like to spend exercising each workout day?</p>
+            <input type = "radio" name = "time" value="30">30 minutes<br>
+            <input type = "radio" name = "time" value="45">45 minutes<br>
+            <input type = "radio" name = "time" value="60">60 minutes<br>
+            <p class= "bold">I would say that my body:</p>
+            <input type = "radio" name = "body_fat" value="1">Carries extra fat<br>
+            <input type = "radio" name = "body_fat" value="1">Is mostly skinny<br>
+            <input type = "radio" name = "body_fat" value="1">Is somewhat lean but muscular<br>
+            <p class= "bold">Which are wider, my shoulders or my waist?</p>
+            <input type = "radio" name = "shoulder" value="1">My waist is wider<br>
+            <input type = "radio" name = "shoulder" value="1">They are about the same<br>
+            <input type = "radio" name = "shoulder" value="1">My shoulders are wider<br>
+            <p class= "bold">When I flex my legs:</p>
+            <input type = "radio" name = "legs" value="1">There is no difference<br>
+            <input type = "radio" name = "legs" value="1">There is slight definition<br>
+            <input type = "radio" name = "legs" value="1">There is noticeable definition<br>
+            <p class= "bold">When I flex my arms:</p>
+            <input type = "radio" name = "arms" value="1">There is no difference<br>
+            <input type = "radio" name = "arms" value="1">There is slight definition<br>
+            <input type = "radio" name = "arms" value="1">There is noticeable definition<br>
+            <p class= "bold">When I flex my back:</p>
+            <input type = "radio" name = "back" value="1">There is no difference<br>
+            <input type = "radio" name = "back" value="1">There is slight definition<br>
+            <input type = "radio" name = "back" value="1">There is noticeable definition<br>
+            <p class= "bold">In standing posture and without sucking in my gut, does my chest extend past my belly?<br></p>
+            <input type = "radio" name = "chest" value="1">No, my belly is larger<br>
+            <input type = "radio" name = "chest" value="1">No, it's about the same<br>
+            <input type = "radio" name = "chest" value="1">Yes, my chest is larger than my belly<br>
+            <button onclick="questionnaire()">Submit</button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+        <script src = "./scripts/questionnaire.js"> </script>
+        <script>
+                var firebaseConfig = {
+                    apiKey: "AIzaSyCVGsDdbKJYehZNz83LMRWSGWXEXopJJqU",
+                    authDomain: "workout-ada54.firebaseapp.com",
+                    databaseURL: "https://workout-ada54.firebaseio.com",
+                    projectId: "workout-ada54",
+                    storageBucket: "workout-ada54.appspot.com",
+                    messagingSenderId: "323648675143",
+                    appId: "1:323648675143:web:34762df453e1d6dc0a0062",
+                };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+    </body>
+</html>

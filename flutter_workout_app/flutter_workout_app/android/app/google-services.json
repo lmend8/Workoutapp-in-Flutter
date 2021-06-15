@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "323648675143",
+    "firebase_url": "https://workout-ada54.firebaseio.com",
+    "project_id": "workout-ada54",
+    "storage_bucket": "workout-ada54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323648675143:android:997948d55c2fe7c30a0062",
+        "android_client_info": {
+          "package_name": "com.workout.igitfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323648675143-49fe8blfafd438e4qmog4oen2tehuhco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI473CvOH784RbKp4MHDXK9EjMXGBmaVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323648675143-49fe8blfafd438e4qmog4oen2tehuhco.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323648675143-9uovs3it9i6spk6ukgfkerhjn83m3tbg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.workoutapp.firebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
